@@ -10,7 +10,8 @@ Curra Protocol is designed to make it super easy for you to setup and manage you
 
 In the following sections we will go into more detail on how to accept crypto payments.
 
-* Mint Ownership NFT to protect you funds on-chain
+* Mint Ownership NFT to start your journey with Curra
+* Link `Rule.sol` smart contract to Onwnership NFT for funds on-chain protection
 * Choose Operator to flush funds to Hot Wallet (Target Address)
 * Create Receiving Wallets
 * Receive Payment Notification
