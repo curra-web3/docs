@@ -17,4 +17,3 @@
 * [🔜 Relay Crypto Withdrawals](developer-services/relay-crypto-withdrawals.md)
 * [🔜 Deploy Operator](developer-services/deploy-operator.md)
 * [Curra Crypto API](developer-services/curra-crypto-api.md)
-* [JavaScript/TS SDK](developer-services/javascript-ts-sdk.md)
