@@ -4,7 +4,7 @@ Merchants and Custodians create unique receive addresses to accept payments from
 
 With Curra, you can create Receive Addresses on your side using the SDK. All Receive Addresses are pre-calculated off-chain (from Ownership NFT) using the CREATE2 algorithm.
 
-After the end-user sends assets to the Receive Address, the Operator deploys a smart contract to this wallet (for the first flush) and flushes the asset according to the forwarding rule specified in the Rules Smart Contract, charging the protocol user a fee for this operation.
+After the end-user sends assets to the Receive Address, the Operator deploys a smart contract to this wallet (for the first forward) and flushes the asset according to the forwarding rule specified in the Rules Smart Contract, charging the protocol user a fee for this operation.
 
 ### Usage
 
