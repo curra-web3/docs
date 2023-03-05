@@ -24,12 +24,12 @@ e.g. Forward to Cold Wallet, Settle assets in Stablecoin/Fiat, Execute AML Forwa
 
 ### **Operator (aka. Acquirer)**
 
-The Operator is responsible for executing **assets forwarding process** for Protocol User, triggering on-chain transaction from **Receive Wallet** and Relaying Withdrawals for Protocol User**.**
+The Operator is responsible for executing **assets forwarding process** for Protocol User, triggering on-chain transaction from **Receive Address** and Relaying Withdrawals for Protocol User**.**
 
 **Operators** are restricted to transferring assets solely to the wallet of the **Protocol User (Target Address),** specified in [Rules Smart Contract](../developer-services/accept-crypto-payments/2-rules.md) **** or executing automations as outlined in the Rules Smart Contract**.**&#x20;
 
 {% hint style="success" %}
-**Protocol User** assets, located on **Receive Wallet** secured on-chain by **Rules Smart Contract**
+**Protocol User** assets, located on **Receive Address** secured on-chain by **Rules Smart Contract**
 
 **Protocol User** creates an **Ownership NFT** with specified forwarding rules, for example "forward only to hot wallet". All **Operator** transactions must comply with this rule, protecting Merchants and Custodians from Malicious activity of counterparties, otherwise transaction, initiated by Operator, will be rejected by network.
 {% endhint %}

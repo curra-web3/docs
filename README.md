@@ -14,7 +14,7 @@ Creating on-chain protocol to replace centralized nature of crypto processing, C
 
 ## With Curra developers can:
 
-* Create unique receive wallets or issue invoices to accept crypto from customers in crypto
+* Create unique receive addresses or issue invoices to accept crypto from customers in crypto
 * Track the status of crypto payments
 * Create automations for crypto processing flow
 * Relay trustless crypto withdrawals

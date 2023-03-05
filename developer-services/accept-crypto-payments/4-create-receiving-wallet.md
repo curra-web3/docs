@@ -1,10 +1,10 @@
-# Create Receive Wallet
+# Create Receive Address
 
-Merchants and Custodians create unique receive wallets to accept payments from end-users for identification purposes.
+Merchants and Custodians create unique receive addresses to accept payments from end-users for identification purposes.
 
-With Curra, you can create Receive Wallets on your side using the SDK. All Receiving Wallets are pre-calculated off-chain (from Ownership NFT) using the CREATE2 algorithm.
+With Curra, you can create Receive Addresses on your side using the SDK. All Receive Addresses are pre-calculated off-chain (from Ownership NFT) using the CREATE2 algorithm.
 
-After the end-user sends assets to the Receive Wallet, the Operator deploys a smart contract to this wallet (for the first flush) and flushes the asset according to the forwarding rule specified in the Rules Smart Contract, charging the protocol user a fee for this operation.
+After the end-user sends assets to the Receive Address, the Operator deploys a smart contract to this wallet (for the first flush) and flushes the asset according to the forwarding rule specified in the Rules Smart Contract, charging the protocol user a fee for this operation.
 
 ### Usage
 

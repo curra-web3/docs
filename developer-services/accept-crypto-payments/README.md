@@ -13,5 +13,5 @@ In the following sections we will go into more detail on how to accept crypto pa
 * Mint Ownership NFT to start your journey with Curra
 * Link `Rule.sol` smart contract to Onwnership NFT for assets on-chain protection
 * Choose Operator to forward assets to Target Address (e.g. Hot Wallet)
-* Create Receive Wallets
+* Create Receive Addresses
 * Receive Payment Notification
