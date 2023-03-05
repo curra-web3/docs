@@ -4,7 +4,7 @@ description: Coming Soon.
 
 # 🔜 Deploy Operator
 
-Operators are critical to Curra decentralized protocol, they are responsible for executing transactional clearing for Protocol User, triggering on-chain transaction from **Receiving Wallet** and Relaying Withdrawals for Protocol User**.**
+Operators are critical to Curra decentralized protocol, they are responsible for executing transactional clearing for Protocol User, triggering on-chain transaction from **Receive Wallet** and Relaying Withdrawals for Protocol User**.**
 
 Anybody can deploy their own Operator implementing Operator Interface to enhance crypto processing with consumer-oriented features and pricing models.
 

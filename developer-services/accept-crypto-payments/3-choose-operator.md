@@ -1,6 +1,6 @@
-# Operator
+# Choose Operator
 
-Operators are responsible for executing transactional clearing for Protocol User, triggering on-chain transaction from **Receiving Wallet** and Relaying Withdrawals for Protocol User with their own pricing model and feature set.&#x20;
+Operators are responsible for executing transactional clearing for Protocol User, triggering on-chain transaction from **Receive Wallet** and Relaying Withdrawals for Protocol User with their own pricing model and feature set.
 
 Depending on your needs, you can find a suitable operator.
 

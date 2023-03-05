@@ -2,7 +2,7 @@
 description: Your Custody in NFT
 ---
 
-# Obtaining Ownership NFT
+# Obtain Ownership NFT
 
 Obtaining the Ownership NFT is the first step to start your journey with Curra. This token serves as a personal identifier and a key for Protocol User to gain access to Curra.
 
@@ -14,6 +14,7 @@ The Ownership NFT offers the following advantages:
 * NFT IDs are used as a salt when generating deterministic forwarding addresses and are the backbone of the protocol security.
 
 Also:
+
 * NFTs can be transferred to other addresses, including smart contract wallets such as ChainSafe.
 * A single account can possess multiple NFTs.
 * NFTs can be staked or swapped on any protocol that supports ERC721 tokens.
@@ -22,9 +23,8 @@ Also:
 
 ### How to Obtain
 
-You can mint the Ownership NFT via [Curra DApp](https://app.curra.io), or by calling the `mint(address recipient, address rule)` method on the Curra main contract [Traffic.sol](https://github.com/curra-web3/contracts/blob/main/src/Traffic.sol#L49). 
+You can mint the Ownership NFT via [Curra DApp](https://app.curra.io), or by calling the `mint(address recipient, address rule)` method on the Curra main contract [Traffic.sol](https://github.com/curra-web3/contracts/blob/main/src/Traffic.sol#L49).
 
 {% hint style="info" %}
-By default, minted NFTs will be linked with the "Whitelisted Address Rule", which means that it will enable asset forwarding only to the address that minted the NFT.
+By default, minted NFTs will be linked with the [Whitelisted Address Rule](2-rules.md), which means that it will enable asset forwarding only to the address that minted the NFT.
 {% endhint %}
-

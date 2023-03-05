@@ -14,10 +14,10 @@ Creating on-chain protocol to replace centralized nature of crypto processing, C
 
 ## With Curra developers can:
 
-* Create unique receiving wallets or issue invoices to accept crypto from customers in crypto
+* Create unique receive wallets or issue invoices to accept crypto from customers in crypto
 * Track the status of crypto payments
 * Create automations for crypto processing flow
-* Relay trustless crypto withdrawals through meta transactions
+* Relay trustless crypto withdrawals
 
 ## Protocol Roles
 
@@ -43,7 +43,7 @@ Curra Protocol is currently in Alpha. [Application for Mainnet early adopters he
 * [ ] Polygon
 * [ ] Tron
 
-## **Useful Links**:
+## **Useful Links**
 
-* ****[**Website**](https://curra.io)****
-* ****[**Discord**](https://discord.gg/5Qpn6Ksm)****
+* [Website](https://curra.io)
+* [Discord](https://discord.gg/5Qpn6Ksm)
