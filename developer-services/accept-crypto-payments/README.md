@@ -4,7 +4,7 @@ description: With Decentralised and Trustless Crypto Processing Protocol.
 
 # Accept Crypto Payments
 
-<figure><img src="../../.gitbook/assets/Illustration (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Illustration (4).png" alt=""><figcaption></figcaption></figure>
 
 Curra Protocol is designed to make it super easy for you to setup and manage your crypto processing automations, protocol handles the blockchain complexities for you, every step of the way.
 
