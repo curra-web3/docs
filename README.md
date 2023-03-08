@@ -8,7 +8,7 @@ The Curra Protocol is a pioneering to process crypto payments in a trustless and
 
 ## Vision
 
-Our mission is to solve the issues of lacking reliability, scalability, centralisation and illiberal costs around crypto processing.&#x20;
+Our mission is to solve the issues of lacking reliability, scalability, centralisation and illiberal costs around crypto processing.
 
 Creating on-chain protocol to replace centralized nature of crypto processing, Curra aims to service the next generation of Merchants, Custodians and B2B Services by providing a reliable and decentralised backend that makes them capable of onboarding the next billion users to crypto.
 
@@ -37,7 +37,7 @@ For more information about protocol roles, please visit [this page](introduction
 Curra Protocol is currently in Alpha. [Application for Mainnet early adopters here.](https://forms.gle/5J4yZbSCKJMCt3B99)
 {% endhint %}
 
-* [x] Goerli Network&#x20;
+* [x] Goerli Network
 * [ ] Ethereum
 * [ ] BNB Smart Chain
 * [ ] Polygon
@@ -47,3 +47,4 @@ Curra Protocol is currently in Alpha. [Application for Mainnet early adopters he
 
 * [Website](https://curra.io)
 * [Discord](https://discord.gg/5Qpn6Ksm)
+* [Twitter](https://twitter.com/curraprotocol)
