@@ -14,6 +14,7 @@
   * [Choose Operator](developer-services/accept-crypto-payments/3-choose-operator.md)
   * [Create Receive Address](developer-services/accept-crypto-payments/4-create-receiving-wallet.md)
   * [Transaction Notifications](developer-services/accept-crypto-payments/5-transaction-notifications.md)
+* [JS/TS SDK](developer-services/javascript-ts-sdk.md)
+* [🔜 Curra Crypto API](developer-services/curra-crypto-api.md)
 * [🔜 Relay Crypto Withdrawals](developer-services/relay-crypto-withdrawals.md)
 * [🔜 Deploy Operator](developer-services/deploy-operator.md)
-* [Curra Crypto API](developer-services/curra-crypto-api.md)
