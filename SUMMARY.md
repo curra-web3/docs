@@ -16,4 +16,5 @@
   * [Transaction Notifications](developer-services/accept-crypto-payments/5-transaction-notifications.md)
 * [🔜 Relay Crypto Withdrawals](developer-services/relay-crypto-withdrawals.md)
 * [🔜 Deploy Operator](developer-services/deploy-operator.md)
+* [JS/TS SDK](developer-services/javascript-ts-sdk.md)
 * [Curra Crypto API](developer-services/curra-crypto-api.md)
