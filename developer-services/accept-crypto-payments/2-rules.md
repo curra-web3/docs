@@ -22,70 +22,65 @@ If you have any questions at any point in time, feel free to reach out to us on 
 
 ## How to use
 
-As mentioned before users can deploy their own rules contracts, those contracts are required to implement [Rule.sol](https://github.com/curra-web3/contracts/blob/main/src/Rule.sol) interface, let's take at look at it:
+As mentioned before users can deploy their own rules contracts, those contracts are required to extend [RuleBase.sol](https://github.com/curra-web3/contracts/blob/main/src/RuleBase.sol) interface, let's take at look at it:
 
 ```solidity
-interface Rule {
-    function exec(uint256 ownershipId, address forwarder, uint256 value, address dest)
-        external
+abstract contract RuleBase {
+    function _exec(address forwarder, uint256 value, address dest) internal view virtual returns (address, uint256);
+
+    function _execERC20(address forwarder, address token, uint256 value, address dest)
+        internal
         view
+        virtual
         returns (address, uint256);
 
-    function execERC20(uint256 ownershipId, address forwarder, address token, uint256 value, address dest)
-        external
+    function _execERC721(address forwarder, address token, uint256 id, address dest)
+        internal
         view
-        returns (address, uint256);
-
-    function execERC721(uint256 ownershipId, address forwarder, address token, uint256 id, address dest)
-        external
-        view
+        virtual
         returns (address);
 
-    function execERC1155(uint256 ownershipId, address forwarder, address token, uint256 id, uint256 value, address dest)
-        external
+    function _execERC1155(address forwarder, address token, uint256 id, uint256 value, address dest)
+        internal
         view
+        virtual
         returns (address, uint256);
+
+    // ...............
 }
 ```
 
-As you can see here are mutiple methods for each token standard, for example, let's look at the `execERC20()` method, which is going to be executed everytime when operator tries to forward your erc20 assets. For details on each token standard you can check out documented source code [here](https://github.com/curra-web3/contracts/blob/main/src/Rule.sol). `execERC20()` method accepts following params:
+As you can see here are mutiple methods for each token standard, for example, let's look at the `execERC20()` method, which is going to be executed everytime when operator tries to forward your erc20 assets. For details on each token standard you can check out documented source code [here](https://github.com/curra-web3/contracts/blob/main/src/RuleBase.sol). `_execERC20()` method accepts following params:
 
-* `ownershipId` – id of your Ownership NFT
 * `forwarder` – receiving address which is going to be processed by a operator
 * `token` – address of ERC20 asset that is going to be forwarded
 * `value` – amount of ERC20 asset that is going to be forwarded
 * `dest` – forwarding destination address
 
-To clearify how rule contract can be implemented, let's examine this method wihin the default rule [WhitelistedAddressRule.sol](https://github.com/curra-web3/contracts/blob/main/src/Rule.sol) which is automatically assigned to your Ownership NFT after it's minted. It serves only for a single feature: allow forwarding only to the address which minted an NFT.
+To clearify how rule contract can be implemented, let's examine this method wihin the default rule [WhitelistedAddressRule.sol](https://github.com/curra-web3/contracts/blob/main/src/WhitelistedAddressRule.sol) which is automatically assigned to your Ownership NFT after it's minted. It serves only for a single feature: allow forwarding only to the address which minted an NFT.
 
 ```solidity
 contract WhitelistedAddressRule is Rule {
+    // here is address where assets will be forwarded
     address public immutable whitelisted;
 
     constructor(address _whitelisted) {
         whitelisted = _whitelisted;
     }
 
-    function execERC20(uint256, address, address, uint256 value, address dest)
-        external
+    function _execERC20(address, address, uint256 value, address)
+        internal
         view
         override
-        returns (address, uint256)
+        returns (address d, uint256 v)
     {
-        if (dest == address(0x0)) {
-            return (whitelisted, value);
-        }
-        require(dest == whitelisted, "Dest");
-        return (dest, value);
+        // return whitelisted address from this function, so all assets can be forwarded only to it
+        d = whitelisted;
+
+        // return value provided by operator
+        v = value;
     }
 }
 ```
 
-First thing you can notice is that [WhitelistedAddressRule.sol](https://github.com/curra-web3/contracts/blob/main/src/WhitelistedAddressRule.sol) implements the [Rule.sol](https://github.com/curra-web3/contracts/blob/main/src/Rule.sol) interface, which is required for all rules to implement.
-
-The code above does the following:
-
-1. If the destination specified by the operator is a null address, just return the whitelisted address `whitelisted`.
-2. If a destination is provided by the operator, ensure that it's equal to the whitelisted address.
-   * If it's not equal, abort.
-   * If it's equal, allow forwarding.
+First thing you can notice is that [WhitelistedAddressRule.sol](https://github.com/curra-web3/contracts/blob/main/src/WhitelistedAddressRule.sol) extends the [RuleBase.sol](https://github.com/curra-web3/contracts/blob/main/src/RuleBase.sol) contract, which is required for all rules to extends and implement virtual methods.
