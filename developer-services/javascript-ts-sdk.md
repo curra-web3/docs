@@ -2,7 +2,7 @@
 description: JS/TS integration package
 ---
 
-# JavaScript/TS SDK
+# JS/TS SDK
 
 ## Overview
 
@@ -10,9 +10,9 @@ description: JS/TS integration package
 
 * New forwarder addresses allocation
 
-## Getting started&#x20;
+## Getting started
 
-### Prerequisites&#x20;
+### Prerequisites
 
 Before using Curra SDK next actions should be performed:
 
@@ -21,7 +21,7 @@ Before using Curra SDK next actions should be performed:
 
 {% hint style="info" %}
 **Note:** All Curra layers are completely non-custodial (private keys stores on your side)\
-Private key is required to sign nonce messages to the [Curra Network](broken-reference) coordinator only to identify your ownership, also you can check out the [GitHub repository](https://github.com/curraprotocol/js-sdk) (SDK is completely open-source) to make sure that your key is in a safe.
+Private key is required to sign nonce messages to the Curra Protocol coordinator only to identify your ownership, also you can check out the [GitHub repository](https://github.com/curraprotocol/js-sdk) (SDK is completely open-source) to make sure that your key is in a safe.
 {% endhint %}
 
 Currently, all examples are for [Goerli Ethereum testnet blockchain](https://goerli.net/). More blockchains will be available soon.

@@ -46,5 +46,5 @@ Curra Protocol is currently in Alpha. [Application for Mainnet early adopters he
 ## **Useful Links**
 
 * [Website](https://curra.io)
-* [Discord](https://discord.gg/5Qpn6Ksm)
+* [Discord](https://discord.gg/xEnh8Peacm)
 * [Twitter](https://twitter.com/curraprotocol)

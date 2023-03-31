@@ -2,7 +2,7 @@
 description: Blockchain indexing
 ---
 
-# Curra Crypto API
+# 🔜 Curra Crypto API
 
 <figure><img src="../.gitbook/assets/Frame 48098526 (2).png" alt=""><figcaption></figcaption></figure>
 
