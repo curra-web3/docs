@@ -26,5 +26,5 @@ Also:
 You can mint the Ownership NFT via [Curra DApp](https://app.curra.io), or by calling the `mint()` method on the Curra main contract [Curra.sol](https://github.com/curra-web3/contracts/blob/main/src/Curra.sol#L49).
 
 {% hint style="info" %}
-By default, minted NFTs will be linked with the [Whitelisted Address Rule](2-rules.md), which means that it will enable asset forwarding only to the address that minted the NFT.
+By default, minted NFTs will be linked with the [Whitelisted Address Rule](2-rules.md), enabling asset forwarding only to the address that minted the NFT.
 {% endhint %}

@@ -8,7 +8,7 @@ After the end-user sends assets to the Receive Address, the Operator deploys a s
 
 ### Usage
 
-You can create forwarding addresses via [Curra DApp](https://app.curra.io) or use [Curra SDK](developer-services/javascript-ts-sdk.md).
+You can create forwarding addresses via [Curra DApp](https://app.curra.io) or use [Curra SDK](../javascript-ts-sdk.md).
 
 ### How it works
 
