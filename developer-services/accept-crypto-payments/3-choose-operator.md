@@ -8,8 +8,6 @@ Depending on your needs, you can find a suitable operator.
 
 Currently, the Curra Operator is the only operator available and is chosen by default. Anyone who wants to use it will need to replenish the operator's balance, which will be used to compensate transaction fees.
 
-**Pricing**: From 20% Premium Percent of consumed Gas
-
 * [x] Assets Forwarding
 * [x] Relayer
 
