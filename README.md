@@ -38,7 +38,7 @@ Curra Protocol is currently in Alpha. [Application for Mainnet early adopters he
 {% endhint %}
 
 * [x] Goerli Network
-* [ ] Ethereum
+* [x] Ethereum
 * [ ] BNB Smart Chain
 * [ ] Polygon
 * [ ] Tron
