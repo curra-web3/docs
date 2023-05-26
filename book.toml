@@ -3,7 +3,7 @@ authors = ["pintak.eth"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Curra"
+title = "Curra documentation"
 
 [output.html]
 default-theme = "light"
