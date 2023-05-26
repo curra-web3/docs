@@ -1,0 +1,13 @@
+[book]
+authors = ["pintak.eth"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Curra"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "light"
+no-section-label = true
+git-repository-url = "https://github.com/curraprotocol/docs"
+cname = "docs.curra.io"
