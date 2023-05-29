@@ -18,8 +18,8 @@ More here:
 At present, the majority of cryptocurrency processing providers are costly, charging significantly higher fees than their actual expenses. However, Curra offers a different approach. With Curra, you only pay for the blockchain transaction fees, regardless of the transaction amount. Moreover, Curra utilizes advanced smart contracts that are highly optimized for gas consumption and incorporates various cost-saving methods available in the field. We are continuously working on further optimization and innovation in this area.
 
 More here: 
-- [Processing fees (gas pump)](gas_pump.md)
-- [API pricing](api_pricing.md)
+- [Processing fees (gas pump)](../costs/gas_pump.md)
+- [API pricing](../costs/api_pricing.md)
 
 ## Features
 
