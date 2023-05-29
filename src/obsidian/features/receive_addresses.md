@@ -4,28 +4,28 @@
 
 ![receive address example](../images/receive_address_example.png)
 
-In order to receive payments from your client you should give him address, so he can deposit his assets to the address. After Curra will detect that income is confirmed on address, assets will be automatically forwarded to your configured address.
+If you operate a retail-oriented crypto business such as an exchange, lending desk, or neobank, you probably receive a significant number of ERC20/ deposits on a daily basis. To effectively handle and track these deposits, it is necessary to assign a new address to each client. Received  funds are automatically forwarded to your configured address
 
 > 📖 **Notes on addresses**
 > 
-> Each address has it's own index, can be treated as id. Each address is deterministically calculated using these indexes and same on different EVM chains. That mean you can use same addresses on various supported EVM blockchains
+> Every address is assigned a unique index that can be considered as its identifier. These addresses are deterministically generated using these indexes and remain the same across different EVM chains. This means you can utilize the same addresses across multiple EVM blockchains that are supported.
 
 
 ## Quick start
 
-Before you can create addresses, you should [authorise](../security/api_authorization.md).
+Before you can create addresses, you should [authorize](../security/api_authorization.md) your server.
 
 ### JS/TS SDK
 
-Create new receive address:
+Create a new receive address:
 
-```
+```js
 const address = await curra.getNextAddress()
 ```
 
-Create new receive address by it's index:
+Create a new receive address by its index:
 
-```
+```js
 const address = await curra.getAddress(6)
 ```
 

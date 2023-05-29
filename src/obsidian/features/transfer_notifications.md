@@ -4,20 +4,20 @@
 
 ![webooks](../images/webooks.png)
 
-In order to react to payments coming to your [receive addresses](receive_addresses.md) you can setup income notifications. Every time income considered confirmed on the receive address Curra will send HTTP webhook request to your server.
+In order to react to payments coming to your [receive addresses](receive_addresses.md) you can set up transfers notifications. Every time deposit is considered confirmed on the receiving address Curra will send HTTP webhook request to your server.
 
 What we offer:
 1. Retries on failed requests. Every 10th minute
 2. Webhook request on every confirmation transfer get. Up to 21 confirmations
 
 ## Setup
-You can set your server url on <a href="https://app.curra.io/notifications" target="_blank">notifications page</a>:
+You can set your server URL on <a href="https://app.curra.io/notifications" target="_blank">notifications page</a>:
 
 ![webhooks_setup](../images/webhooks_setup.png)
 
-## Data
+## Webhook payload
 
-Webhook HTTP request Curra send you has content type is `application/json` and method `POST`.
+Webhook HTTP request, which Curra sends you has content type `application/json` and method `POST`.
 
 ### Coin transfer example
 
@@ -26,11 +26,11 @@ Webhook HTTP request Curra send you has content type is `application/json` and m
   "id": 99, // transfer id, unique for each transfer
   "fromAddress": {
     "value": "0x67b1d87101671b127f5f8714789c7192f7ad340e",
-    "owned": false
+    "owned": false // true if outgoing payment, false if incoming
   },
   "toAddress": {
     "value": "0xf51eb0786cbdb8eb6e8175f0f32ecf90b04ceb84", // your receive address
-    "owned": true
+    "owned": true // true if incoming payment, false if outgoing
   },
   "value": "1000000000000000000", // tx amount in raw format, 1000000000000000000 wei
   "valueDecimal": "1.000000000000000000", // tx amount in decimal format: 1 ETH
@@ -51,18 +51,18 @@ Webhook HTTP request Curra send you has content type is `application/json` and m
 
 ### ERC20 transfer example
 
-Same as coin, but includes `assetMetadata.address` which represents token contract address:
+Same as a coin payload, but includes `assetMetadata.address` which represents the token contract address:
 
 ```json
 {
   "id": 99, // transfer id, unique for each transfer
   "fromAddress": {
     "value": "0x67b1d87101671b127f5f8714789c7192f7ad340e",
-    "owned": false
+    "owned": false // true if outgoing payment, false if incoming
   },
   "toAddress": {
     "value": "0xf51eb0786cbdb8eb6e8175f0f32ecf90b04ceb84", // your receive address
-    "owned": true
+    "owned": true // true if incoming payment, false if outgoing
   },
   "value": "1000000", // tx amount in raw format
   "valueDecimal": "1.000000", // tx amount in decimal format: 1 USDT

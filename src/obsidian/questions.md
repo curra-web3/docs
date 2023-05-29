@@ -1,1 +1,0 @@
-1. Where to redirect users for api pricsing
