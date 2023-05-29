@@ -2,7 +2,7 @@
 
 ## General
 
-As mentioned in the [introduction](what_is_curra.md), Curra doesn't charge processing fees, meaning you pay only for blockchain network fees. All funds that are received to [receive addresses](../features/receive_addresses.md) have to be forwarded to your wallet, in order to make it possible you have to fill your balance with coins which will be used to pay for these transactions. Balance can be filled using the Curra <a href="https://app.curra.io/" target="_blank">application</a>.
+As mentioned in the [introduction](../intoduction/what_is_curra.md), Curra doesn't charge processing fees, meaning you pay only for blockchain network fees. All funds that are received to [receive addresses](../features/receive_addresses.md) have to be forwarded to your wallet, in order to make it possible you have to fill your balance with coins which will be used to pay for these transactions. Balance can be filled using the Curra <a href="https://app.curra.io/" target="_blank">application</a>.
 
 ## How to make it cheaper
 
