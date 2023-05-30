@@ -21,10 +21,10 @@ Also:
 ## How to obtain
 
 Here are few ways:
-- Complete onboarding on Curra <a href="https://app,.curra.io" target="_blank">application</a>
+- Complete onboarding on Curra <a href="https://app.curra.io" target="_blank">application</a>
 - `mint()` method on the Curra main contract <a href="https://github.com/curra-web3/contracts/blob/main/src/Curra.sol#L49" target="_blank">Curra.sol</a>. 
 
-After NFT is minted you can get Ownership NFT ID on Curra <a href="https://app,.curra.io" target="_blank">application</a> via wallet modal:
+After NFT is minted you can get Ownership NFT ID on Curra <a href="https://app.curra.io" target="_blank">application</a> via wallet modal:
 
 
 ![where to get ownership id](/obsidian/images/get_ownership_id.png)
