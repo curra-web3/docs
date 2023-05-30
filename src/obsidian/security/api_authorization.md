@@ -10,7 +10,7 @@ To get the API secret you should complete onboarding on the Curra <a href="https
 After that, the secret can be obtained on the <a href="https://app.curra.io/configuration" target="_blank">configuration page</a>:
 
 
-![get_api_secret](../images/get_api_secret.png)
+![get_api_secret](/obsidian/images/get_api_secret.png)
 
 ## Requests
 
@@ -77,7 +77,7 @@ OWNERSHIP: your_ownership_id
 
 ## Webhooks
 
-In order to authorize Curra webhooks, like [transfer notifications](../features/transfer_notifications.md), you can use JS/TS SDK or verify it manually.
+In order to authorize Curra webhooks, like [transfer notifications](/obsidian/features/transfer_notifications.md), you can use JS/TS SDK or verify it manually.
 
 ### JS/TS SDK
 

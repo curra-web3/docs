@@ -2,7 +2,7 @@
 
 ## General
 
-![webooks](../images/webooks.png)
+![webooks](/obsidian/images/webooks.png)
 
 In order to react to payments coming to your [receive addresses](receive_addresses.md) you can set up transfers notifications. Every time deposit is considered confirmed on the receiving address Curra will send HTTP webhook request to your server.
 
@@ -13,7 +13,7 @@ What we offer:
 ## Setup
 You can set your server URL on <a href="https://app.curra.io/notifications" target="_blank">notifications page</a>:
 
-![webhooks_setup](../images/webhooks_setup.png)
+![webhooks_setup](/obsidian/images/webhooks_setup.png)
 
 ## Webhook payload
 

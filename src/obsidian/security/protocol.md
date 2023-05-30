@@ -2,7 +2,7 @@
 
 ## Motivation
 
-As mentioned in the [introduction](../what_is_curra.md) Curra leverages an on-chain protocol to replace the centralized nature of crypto processing. Through smart contracts within the protocol, we guarantee that all funds belong solely to you, those contracts are called **Rules**. At every stage of the processing, you maintain full ownership of your client's funds, with no intermediaries involved. All assets are securely directed straight to your wallet, which is specified in the rule.
+As mentioned in the [introduction](/obsidian/what_is_curra.md) Curra leverages an on-chain protocol to replace the centralized nature of crypto processing. Through smart contracts within the protocol, we guarantee that all funds belong solely to you, those contracts are called **Rules**. At every stage of the processing, you maintain full ownership of your client's funds, with no intermediaries involved. All assets are securely directed straight to your wallet, which is specified in the rule.
 
 ## How it works?
 

@@ -27,4 +27,4 @@ Here are few ways:
 After NFT is minted you can get Ownership NFT ID on Curra <a href="https://app,.curra.io" target="_blank">application</a> via wallet modal:
 
 
-![where to get ownership id](../images/get_ownership_id.png)
+![where to get ownership id](/obsidian/images/get_ownership_id.png)
