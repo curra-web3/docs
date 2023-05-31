@@ -9,14 +9,14 @@ As mentioned in the [introduction](/obsidian/intoduction/what_is_curra.md), Curr
 >  
 > Values provided in the table below are applicable to the default configuration. [Contact us](../contact_us.md) and we will help you to find a suitable configuration
 
-|Asset|First deposit|Second and further deposit|Gas Price diapason|
+|Asset|First deposit|Second and further deposits to an address|Gas price range|
 |-|-|-|-|
 |Ethereum ETH|0.00091 ETH - 0.0027|0 ETH|20-60 gwei|
 |Ethereum Token ERC20|0.00096 ETH - 0.0028 ETH|0.00026 ETH – 0.000785 ETH|20-60 gwei|
 |Binance Smart Chain BNB|0.01 BNB|0 BNB|Constant|
 |Binance Smart Chain Token BEP20|0.0002 BNB|0.00015 BNB|Constant|
 |Polygon MATIC|0.0136 - 0.032 MATIC|0 MATIC|170-400 GWEI|
-|Polygon Token BEP20|0.0142 MATIC|0.033 MATIC|170-400 GWEI|
+|Polygon Token ERC20|0.0142 MATIC|0.033 MATIC|170-400 GWEI|
 
 
 ## How to make it cheaper
