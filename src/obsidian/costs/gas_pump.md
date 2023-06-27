@@ -2,7 +2,7 @@
 
 ## General
 
-As mentioned in the [introduction](/obsidian/intoduction/what_is_curra.md), Curra doesn't charge processing fees, meaning you pay only for blockchain network fees. All funds that are received to [receive addresses](../features/receive_addresses.md) have to be forwarded to your wallet, in order to make it possible you have to fill your balance with coins which will be used to pay for these transactions. Balance can be filled using the Curra <a href="https://app.curra.io/" target="_blank">application</a>. Curra doesn't charge you any fees, coins are used only to cover blockchain miner fees.
+As mentioned in the [introduction](/obsidian/intoduction/what_is_curra.md), Curra doesn't charge processing fees, meaning you pay only for blockchain network fees. All funds that are received to [receive addresses](../features/receive_addresses/index.md) have to be forwarded to your wallet, in order to make it possible you have to fill your balance with coins which will be used to pay for these transactions. Balance can be filled using the Curra <a href="https://app.curra.io/" target="_blank">application</a>. Curra doesn't charge you any fees, coins are used only to cover blockchain miner fees.
 
 
 > ⚠️ **Attention!**

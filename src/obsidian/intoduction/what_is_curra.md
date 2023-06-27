@@ -26,7 +26,7 @@ More here:
 Our feature set is designed to cater to two specific groups: merchants seeking to accept crypto payments and custody builders focused on developing secure and fast blockchain applications.
 
 Highlighted features:
-- [Receive addresses generation for your clients accept crypto payments ](/obsidian/features/receive_addresses.md)
+- [Receive addresses generation for your clients accept crypto payments ](/obsidian/features/receive_addresses/index.md)
 - [Notifications to react to incoming payments](/obsidian/features/transfer_notifications.md)
 
 
@@ -41,5 +41,5 @@ List of available blockchains and assets here: [availability](availability.md)
 Curra offers developers an API and SDK to simplify the integration of new blockchains. Through a unified and streamlined interface, developers can seamlessly integrate with Curra across various blockchains.
 
 Guides:
-- [How to accept crypto payment using receive addresses](/obsidian/features/receive_addresses.md)
+- [How to accept crypto payment using receive addresses](/obsidian/features/receive_addresses/index.md)
 - [How to react to incoming payments](/obsidian/features/transfer_notifications.md)
