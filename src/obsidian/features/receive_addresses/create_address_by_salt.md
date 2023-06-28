@@ -5,24 +5,24 @@
 Use this method when you want to create an address with specific salt. Useful when you want to create same address across different blockchains. Example:
 
 ```ts
-const ethereumAddress = await curraEthereum.createNextAddress()
-const polygonAddress = await curraPolygon.createAddress({
-  salt: ethereumAddress.salt
+const ethereumForwarder = await curraEthereum.createNextForwarder()
+const polygonForwarder = await curraPolygon.createForwarder({
+  salt: ethereumForwarder.salt
 })
 
-// addresses are same if same ownership id used to create curra instances on multiple blockchains
-assert(ethereumAddress === polygonAddress)
+// addresses are same if same ownership id and salt are used to create curra instances on multiple blockchains
+assert(ethereumForwarder.address === polygonForwarder.address)
 ```
 
 ## SDK
 
 ```js
-const address = await curra.createAddress({
+const { address } = await curra.createForwarder({
   salt: "0x00000000000000000000000000000000000000000001" 
 })
 
 // new address with additional fields
-const address = await curra.createNextAddress({
+const { address } = await curra.createForwarder({
   salt: "0x00000000000000000000000000000000000000000001",
   destination: "0x67b1d87101671b127f5f8714789C7192f7ad340e", // specify if your rule smart contract supports multiple destinations
   uniqueId: "i'm unique", // optional unique id 
@@ -33,7 +33,7 @@ const address = await curra.createNextAddress({
 import { RequesterError } from '@curra/sdk'
 
 try {
-	const address = await curra.createAddress({
+	const { address } = await curra.createForwarder({
 	  salt: "0x00000000000000000000000000000000000000000001",
 	  uniqueId: "i'm not unique"
 	})
@@ -52,8 +52,12 @@ try {
 
 ### HTTP
 
-method: `POST`\
-path: `/forwarders`\
+**method**: `POST`
+
+**path**: `/forwarders`
+
+**headers**: 
+- content-type: application/json
 
 **request body**:
 ```ts

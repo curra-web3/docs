@@ -1,4 +1,4 @@
-# Create next address
+# Create new address
 
 ## Intro
 
@@ -8,10 +8,10 @@ Use this method to allocate a brand new never used address.
 
 ```js
 // just new address
-const address = await curra.createNextAddress()
+const { address } = await curra.createNextForwarder()
 
 // new address with additional fields
-const address = await curra.createNextAddress({
+const { address } = await curra.createNextForwarder({
   destination: "0x67b1d87101671b127f5f8714789C7192f7ad340e", // specify if your rule smart contract supports multiple destinations
   uniqueId: "i'm unique", // optional unique id 
   meta: "my user id?", // custom data can be linked to the address, will be included in  incomes webhooks
@@ -21,14 +21,14 @@ const address = await curra.createNextAddress({
 import { RequesterError } from '@curra/sdk'
 
 try {
-	const address = await curra.createNextAddress({
+	const { address } = await curra.createNextForwarder({
 	  uniqueId: "i'm not unique"
 	})
 } catch (e) {
 	if (e instanceof RequesterError) {
       // unique id error example,
       // for all errors that can occur look at the HTTP endpoint reference below
-	  if (e.body.error === 'UNIQUE_ID') {
+	  if (e.body?.error === 'UNIQUE_ID') {
 		  // your logic here
 	  }	
 	} else {

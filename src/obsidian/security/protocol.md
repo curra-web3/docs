@@ -10,7 +10,7 @@ As mentioned in the [introduction](/obsidian/what_is_curra.md) Curra leverages a
 
 Rules are smart contracts deployed by Curra Protocol users to ensure that users' assets can only be forwarded to certain addresses and make the protocol the first-ever payment processing tool that doesn't require direct access to your assets for processing. These rules are executed every time assets are going to be forwarded by the coordinator.
 
-As mentioned before users can deploy their own rules contracts, those contracts are required to extend <a href="https://github.com/curra-web3/contracts/blob/main/src/RuleBase.sol" target="_blank">RuleBase.sol</a> interface, let's take a look at it:
+As mentioned before users can deploy their own rules contracts, those contracts are required to extend RuleBase.sol interface, let's take a look at it:
 ```
 abstract contract RuleBase {
     function _exec(address forwarder, uint256 value, address dest) internal view virtual returns (address, uint256);
@@ -37,14 +37,14 @@ abstract contract RuleBase {
 }
 ```
 
-As you can see here are multiple methods for each token standard, for example, let's look at the `execERC20()` method, which is going to be executed every time when coordinator tries to forward your ERC20 assets. For details on each token standard, you can check out documented source code <a href="https://github.com/curra-web3/contracts/blob/main/src/RuleBase.sol" target="_blank">here</a>. `_execERC20()` method accepts the following params:
+As you can see here are multiple methods for each token standard, for example, let's look at the `execERC20()` method, which is going to be executed every time when coordinator tries to forward your ERC20 assets. `_execERC20()` method accepts the following params:
 
 - `forwarder` – receiving address which is going to be processed by an coordinator
 - `token` – address of ERC20 asset that is going to be forwarded
 - `value` – amount of ERC20 asset that is going to be forwarded
 - `dest` – forwarding destination address
 
-To clarify how to rule contract can be implemented, let's examine this method with the default rule <a href="https://github.com/curra-web3/contracts/blob/main/src/WhitelistedAddressRule.sol" target="_blank">WhitelistedAddressRule.sol</a> which is automatically assigned to your Ownership NFT after it's minted. It serves only for a single feature: allow forwarding only to the address which minted an NFT.
+To clarify how to rule contract can be implemented, let's examine this method with the default rule WhitelistedAddressRule.sol which is automatically assigned to your Ownership NFT after it's minted. It serves only for a single feature: allow forwarding only to the address which minted an NFT.
 
 ```
 contract WhitelistedAddressRule is Rule {
@@ -69,4 +69,4 @@ contract WhitelistedAddressRule is Rule {
     }
 }
 ```
-The first thing you can notice is that <a href="https://github.com/curra-web3/contracts/blob/main/src/WhitelistedAddressRule.sol" target="_blank">WhitelistedAddressRule.sol</a> extends the [RuleBase.sol](https://github.com/curra-web3/contracts/blob/main/src/RuleBase.sol) contract, which is required for all rules to extend and implement virtual methods.
+The first thing you can notice is that WhitelistedAddressRule.sol extends the RuleBase.sol contract, which is required for all rules to extend and implement virtual methods.
