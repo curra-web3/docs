@@ -23,8 +23,8 @@ As mentioned in the [introduction](/obsidian/intoduction/what_is_curra.md), Curr
 
 ### Enable bundles
 
-In order to reduce your expenses x2-3 times you can enable bundles on the <a href="https://app.curra.io/configuration" target="_blank">configuration page</a>. After bundles are enabled, the Curra coordinator will wait until the configured count of deposits is confirmed on your [receive addresses](/obsidian/features/receive_addresses.md). After that, that will be forwarded within a single transaction, reducing fees significantly. Recommended bundle size is – 15
+In order to reduce your expenses x2-3 times you can enable bundles on the <a href="https://app.curra.io/configuration" target="_blank">configuration page</a>. After bundles are enabled, the Curra coordinator will wait until the configured count of deposits is confirmed on your [receive addresses](/obsidian/features/receive_addresses/index.md). After that, that will be forwarded within a single transaction, reducing fees significantly. Recommended bundle size is – 15
 
 ### Reuse addresses
 
-The first deposit to a [receive address](/obsidian/features/receive_addresses.md) is ~3 times more expensive than the second and further deposits to the same address
+The first deposit to a [receive address](/obsidian/features/receive_addresses/index.md) is ~3 times more expensive than the second and further deposits to the same address

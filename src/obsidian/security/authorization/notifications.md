@@ -1,10 +1,10 @@
-# API authorization
+# Notifications
 
-## Webhooks
+## Introduction
 
-In order to authorize Curra webhooks, like [transfer notifications](/obsidian/features/transfer_notifications.md), you can use JS/TS SDK or verify it manually.
+In order to authorize Curra notifications, like [incomes notifications](/obsidian/features/notifications/incomes.md), you can use JS/TS SDK or verify it manually.
 
-### JS/TS SDK
+## JS/TS SDK
 
 Using a public key recovery (more secure way):
 
@@ -17,7 +17,7 @@ const signature = request.headers.signature
 const ok = await curra.verifyWebhookRequest(req.rawBody, req.headers.signature)
 ```
 
-Using secret:
+Using a [secret](/obsidian/security/authorization/index.md):
 
 ```js
 const secret = request.headers.secret
@@ -26,10 +26,10 @@ const originalSecret = await curra.getSecret();
 const ok = secret === originalSecret
 ```
 
-### Manually authorize HTTP request
+## Manually authorize HTTP request
 
 Here are two ways you can verify a webhook request:
-1. Compare the `SECRET` header with your secret
+1. Compare the `SECRET` header with your [secret](/obsidian/security/authorization/index.md)
 2. Recover the public key from the `SIGNATURE` header using ECDSA recovery and compare it with API public key, which can be retrieved using `GET /pubkey` API endpoint
 
 
