@@ -1,4 +1,4 @@
-# Create address by salt
+# Create multichain address
 
 ## Intro
 

@@ -27,4 +27,5 @@ In order to reduce your expenses x2-3 times you can enable bundles on the <a hre
 
 ### Reuse addresses
 
-The first deposit to a [receive address](/obsidian/features/receive_addresses/index.md) is ~3 times more expensive than the second and further deposits to the same address
+The first deposit to a [receive address](/obsidian/features/receive_addresses/index.md) is ~3 times more expensive than the second and further deposits to the same address. You can utilize 
+[time-limited addresses](/obsidian/features/receive_addresses/allocate_time_limited_address.md)

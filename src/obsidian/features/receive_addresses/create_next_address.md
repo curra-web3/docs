@@ -2,7 +2,7 @@
 
 ## Intro
 
-Use this method to allocate a brand new never used address.
+Use this method to allocate a new never used address.
 
 ## SDK
 

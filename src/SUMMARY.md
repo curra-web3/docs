@@ -22,10 +22,11 @@
 
 - [Receive addresses](obsidian/features/receive_addresses/index.md)
   - [Create new address](obsidian/features/receive_addresses/create_next_address.md)
-  - [Create address by salt](obsidian/features/receive_addresses/create_address_by_salt.md)
+  - [Create multichain address](obsidian/features/receive_addresses/create_address_by_salt.md)
+  - [Allocate time-limited address 🔜](obsidian/features/receive_addresses/allocate_time_limited_address.md)
 - [Notifications](obsidian/features/notifications/index.md)
-  - [Incomes notifications](obsidian/features/notifications/incomes.md)
-  - [Forwarding notifications](obsidian/features/notifications/forwarding.md)
+  - [Incoming payments](obsidian/features/notifications/incomes.md)
+  - [Forwarding payments](obsidian/features/notifications/forwarding.md)
 
 # Resources
 

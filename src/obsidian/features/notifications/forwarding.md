@@ -1,10 +1,10 @@
-# Forwarding notifications
+# Forwarding payments
 
 ## Introduction
 
-![webooks](/obsidian/images/webooks.png)
+![webooks](/obsidian/images/forwarding_notifications.png)
 
-Notification sent when balance of your receive address is forwarded to configured wallet
+Notification sent when balance of a [receive address](/obsidian/features/receive_addresses/index.md) is forwarded to a configured wallet
 
 ## Setup
 

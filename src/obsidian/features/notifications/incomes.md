@@ -1,10 +1,10 @@
-# Incomes notifications
+# Incoming payments
 
 ## Introduction
 
 ![webooks](/obsidian/images/webooks.png)
 
-Notification sent on each new income to your receive addresses.
+Notification sent on each new incoming payment to a [receive address](/obsidian/features/receive_addresses/index.md)
 
 ## Setup
 

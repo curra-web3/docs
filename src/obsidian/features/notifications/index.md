@@ -10,6 +10,6 @@ Notifications are used to subscribe to event notifications that occur on your ap
 
 Notifications types:
 
-- [Incomes notifications](/obsidian/features/notifications/incomes.md)
-- [Forwarding notifications](/obsidian/features/notifications/forwarding.md)
+- [Incoming payments](/obsidian/features/notifications/incomes.md)
+- [Forwarding payments](/obsidian/features/notifications/forwarding.md)
 
