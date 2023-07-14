@@ -4,13 +4,13 @@
 
 ![webooks](/obsidian/images/webooks.png)
 
-Notifications sent on each new income to your receive addresses.
+Notification sent on each new income to your receive addresses.
 
 ## Setup
 
 You can set your server URL on the <a href="https://app.curra.io/notifications" target="_blank">notifications page</a> to start receiving incomes notifications:
 
-![webhooks_setup](/obsidian/images/webhooks_setup.png)
+![webhooks_setup](/obsidian/images/webhooks_setup_incomes.png)
 
 ## Webhook payload
 

@@ -25,7 +25,7 @@
   - [Create address by salt](obsidian/features/receive_addresses/create_address_by_salt.md)
 - [Notifications](obsidian/features/notifications/index.md)
   - [Incomes notifications](obsidian/features/notifications/incomes.md)
-  - [Forwarding notifications 🔜](obsidian/features/notifications/forwarding.md)
+  - [Forwarding notifications](obsidian/features/notifications/forwarding.md)
 
 # Resources
 
