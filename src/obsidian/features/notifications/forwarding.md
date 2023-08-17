@@ -34,7 +34,6 @@ You can set your server URL on the <a href="https://app.curra.io/notifications" 
 	"txIndex": 0, // tx index within the transaction
 	"index": 0, // equal to txIndex in native coins transactions, equals to log index in token transactions
 	"dropped": false, // tx has dropped from blockchain
-	"confirmations": 1, // confirmations count
 	"assetMetadata": {
 		// some usefull information about transfer asset
 		"decimals": 18,
