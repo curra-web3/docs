@@ -21,8 +21,7 @@
 # Features
 
 - [Receive addresses](obsidian/features/receive_addresses/index.md)
-  - [Create new address](obsidian/features/receive_addresses/create_next_address.md)
-  - [Create multichain address](obsidian/features/receive_addresses/create_address_by_salt.md)
+  - [Create addresses](obsidian/features/receive_addresses/create.md)
   - [Allocate time-limited address 🔜](obsidian/features/receive_addresses/allocate_time_limited_address.md)
 - [Notifications](obsidian/features/notifications/index.md)
   - [Incoming payments](obsidian/features/notifications/incomes.md)
@@ -31,4 +30,5 @@
 # Resources
 
 - [Contact us](obsidian/contact_us.md)
+- [API reference](obsidian/api_reference.md)
 
