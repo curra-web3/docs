@@ -2,16 +2,9 @@
 
 ## Prerequisites
 
-To perform authorized requests, you can use JS/TS SDK or form HTTP requests by providing your [Ownership NFT ID](/obsidian/security/ownership_nft.md) and the [secret](/obsidian/security/authorization/index.md).
+To perform authorized requests, you can use JS/TS SDK or form HTTP requests by providing your [API key](/obsidian/security/authorization/index.md)
 
 ### JS/TS SDK
-
-Blockchain values:
-
-- `Blockchain.GOERLI` – Goerli blockchain
-- `Blockchain.ETHEREUM` – Ethereum mainnet blockchain
-- `Blockchain.BSC` – Binance Smart Chain blockchain
-- `Blockchain.POLYGON` – Polygon blockchain
 
 Install SDK:
 
@@ -24,42 +17,27 @@ Create `Curra` instance:
 ```js
 const { Blockchain, Curra } = require("@curra/sdk");
 
-const curra = Curra.fromSecret({
-  blockchain: Blockchain.ETHEREUM,
-  secret: "YOUR_SECRET",
-  ownershipId: "YOUR_OWNERSHIP_ID"
+const curra = Curra.fromApiKey({
+  apiKey: "paste your API key here",
 });
 ```
 
 Now you can use the instance to perform requests, and create an address for example:
 
 ```js
-const address = await curra.getNextAddress()
+const address = await curra.getNextAddress();
 ```
 
 ### HTTP
 
-Construct blockchain-specific API URL. Replace `{blockchain}` with the desired blockchain:
-`https://{blockchain}.coordinator.curra.io`
+API URL is [https://api.curra.io](https://api.curra.io)
 
-Blockchain URLs:
-
-- Ethereum – `https://ethereum.coordinator.curra.io`
-- Polygon – `https://polygon.coordinator.curra.io`
-- Goerli – `https://goerli.coordinator.curra.io`
-- Binance Smart Chain – `https://bsc.coordinator.curra.io`
-
-Add the following headers to authorize your HTTP request:
-
-- add `OWNERSHIP: your_ownership_nft_id` header
-- add `SECRET: your_secret` header
+Set `X-API-KEY` header to your API key to authorize your HTTP request
 
 HTTP request example to create an address on Ethereum blockchain:
 
 ```
-POST /addresses/next
-HOST: https://ethereum.coordinator.curra.io
-SECRET: your_secret
-OWNERSHIP: your_ownership_id
+GET /me
+HOST: api.curra.io
+X-API-KEY: your_api_key
 ```
-

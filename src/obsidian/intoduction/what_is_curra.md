@@ -27,7 +27,7 @@ Our feature set is designed to cater to two specific groups: merchants seeking t
 
 Highlighted features:
 - [Receive addresses generation for your clients accept crypto payments ](/obsidian/features/receive_addresses/index.md)
-- [Notifications to react to incoming payments](/obsidian/features/transfer_notifications.md)
+- [Notifications to react to payments](/obsidian/features/transfer_notifications.md)
 
 
 ## Availability
