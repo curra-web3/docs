@@ -2,13 +2,13 @@
 
 ## Introduction
 
-![receive address example](/obsidian/images/receive_address_example.png)
+![receive address example](/images/receive_address_example.png)
 
 If you operate a retail-oriented crypto business such as an exchange, lending desk, or neobank, you probably receive a significant number of ERC20/coin deposits on a daily basis. To effectively handle and track these deposits, it is necessary to assign a new address to each client. Received  funds are automatically forwarded to your configured address.
 
 ## Prerequisites
 
-Before you can create addresses, you should [authorize](/obsidian/security/api_authorization.md) your server.
+Before you can create addresses, you should [authorize](/security/api_authorization.md) your server.
 
 > 📖 **Notes on addresses**
 > 
@@ -16,5 +16,5 @@ Before you can create addresses, you should [authorize](/obsidian/security/api_a
 
 ## Available methods
 
-  - [Create new addresses](/obsidian/features/receive_addresses/create.md)
+  - [Create new addresses](/features/receive_addresses/create.md)
 

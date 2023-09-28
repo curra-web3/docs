@@ -2,7 +2,7 @@
 
 ## Webhooks
 
-In order to authorize Curra webhooks, like [transfer notifications](/obsidian/features/transfer_notifications.md), you can use JS/TS SDK or verify it manually.
+In order to authorize Curra webhooks, like [transfer notifications](/features/transfer_notifications.md), you can use JS/TS SDK or verify it manually.
 
 ### JS/TS SDK
 

@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-To perform authorized requests, you can use JS/TS SDK or form HTTP requests by providing your [API key](/obsidian/security/authorization/index.md)
+To perform authorized requests, you can use JS/TS SDK or form HTTP requests by providing your [API key](/security/authorization/index.md)
 
 ### JS/TS SDK
 

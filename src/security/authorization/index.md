@@ -10,5 +10,5 @@ To get the API secret you should complete onboarding on the Curra <a href="https
 After that, the secret can be obtained on the <a href="https://app.curra.io/configuration" target="_blank">configuration page</a>:
 
 
-![get_api_secret](/obsidian/images/api_key.png)
+![get_api_secret](/images/api_key.png)
 

@@ -2,13 +2,13 @@
 
 ## Intro
 
-![time limited address](/obsidian/images/temporary_addresses.png)
+![time limited address](/images/temporary_addresses.png)
 
 Use this method to allocate a time-limited address. You can specify time to reserve an address for an operation, once time elapsed – address is ready for a new reservation
 
 > 💸 **Why?**
 >
-> As you noticed in [gas pump costs](/obsidian/costs/gas_pump.md): first deposit to the [receive address](obsidian/features/receive_addresses/index.md) is more expensive then the second and subsequent deposits,
+> As you noticed in [gas pump costs](/costs/gas_pump.md): first deposit to the [receive address](/features/receive_addresses/index.md) is more expensive then the second and subsequent deposits,
 > therefore, it's expedient to allocate single address multiple times for different users.
 
 ## SDK
