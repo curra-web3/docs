@@ -8,7 +8,7 @@ Notification sent when balance of a [receive address](/features/receive_addresse
 
 > 🔄 **Retries**
 > 
-> Curra will try to notify you 20 times every 10 minutes in case your server response status isn't 2xx
+> Curra will try to notify you 10 times in case your server response status isn't 2xx
 
 ## Setup
 
