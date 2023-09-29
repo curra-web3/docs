@@ -37,7 +37,7 @@ You can set your server URL on the <a href="https://app.curra.io/notifications" 
 <tr>
 <td>id</td>
 <td><i>string*</i></td>
-<td>identifier of a payment</td>
+<td>unique identifier</td>
 </tr>
 <tr>
 
@@ -46,22 +46,12 @@ You can set your server URL on the <a href="https://app.curra.io/notifications" 
 string*
 </td>
 <td>
-payment receipient address
+recipient address
 </td>
 </tr>
 
 <tr>
-<td>to</td>
-<td>
-string*
-</td>
-<td>
-payment recipient address
-</td>
-</tr>
-
-<tr>
-<td>value</td>
+<td>valueUnits</td>
 <td>
 string*
 </td>
@@ -71,12 +61,12 @@ payment amount in units
 </tr>
 
 <tr>
-<td>valueDecimal</td>
+<td>value</td>
 <td>
 string*
 </td>
 <td>
-payments amount in decimal format
+payment amount in decimal format
 </td>
 </tr>
 
@@ -87,6 +77,16 @@ string*
 </td>
 <td>
 available values at "API value" column <a href="/introduction/availability.html">here<a/>
+</td>
+</tr>
+
+<tr>
+<td>block</td>
+<td>
+number
+</td>
+<td>
+block number in which payment was mined
 </td>
 </tr>
 
@@ -202,10 +202,10 @@ string*<br/>
         "uniqueId": "unique id you specified when address was created or default one",
         "meta": "meta you specified when address was created"
     },
-    "value": "1000000000000000000",
-    "valueDecimal": "1.0",
+    "value": "1.0",
+    "valueUnits": "1000000000000000000",
     "blockchain": "ETHEREUM",
-    "fromAddress": "0x67b1d87101671b127f5f8714789c7192f7ad340e",
+    "fromAddresses": ["0x67b1d87101671b127f5f8714789c7192f7ad340e"],
     "block": 171,
     "txHash": "0x0b15d671d9fe9cfe110c2d3a03867cc0525f6aeee45fe21ff66d07e0fd38ef46",
     "confirmations": 21,

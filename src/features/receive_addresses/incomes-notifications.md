@@ -7,7 +7,7 @@
 Notification sent on each new incoming payment to a [receive address](/features/receive_addresses/index.md)
 
 > 🔄 **Retries**
-> 
+>
 > Curra will try to notify you 20 times every 10 minutes in case your server response status isn't 2xx
 
 ## Setup
@@ -49,7 +49,7 @@ possible variants of `status`:
 <tr>
 <td>id</td>
 <td><i>string*</i></td>
-<td>identifier of a payment</td>
+<td>unique identifier</td>
 </tr>
 <tr>
 <td>toAddress</td>
@@ -68,21 +68,21 @@ meta – meta provided on address creation
 <tr>
 <td>id</td>
 <td><i>string*</i></td>
-<td>identifier of a payment</td>
+<td>uniqie identifier</td>
 </tr>
 
 <tr>
-<td>fromAddress</td>
+<td>fromAddresses</td>
 <td>
-string*
+string*[]
 </td>
 <td>
-sender address
+sender addresses
 </td>
 </tr>
 
 <tr>
-<td>value</td>
+<td>valueUnits</td>
 <td>
 string*
 </td>
@@ -92,12 +92,12 @@ payment amount in units
 </tr>
 
 <tr>
-<td>valueDecimal</td>
+<td>value</td>
 <td>
 string*
 </td>
 <td>
-payments amount in decimal format
+payment amount in decimal format
 </td>
 </tr>
 
@@ -163,11 +163,12 @@ asset id of a payment
 <tr>
 <td>status</td>
 <td>
-string*<br/>"pending" or "success"
+string*<br/>"pending" or "success" or "failed"
 </td>
 <td>
 pending – payment is not confirmed yet <br/>
 success - payment confirmed on the address
+failed - transaction is dropped from the blockchain or execution failed
 </td>
 </tr>
 
@@ -203,10 +204,10 @@ human-readable description of status field
 		"uniqueId": "unique id you specified when address was created",
 		"meta": "meta you specified when address was created"
 	},
-	"value": "1000000000000000000",
-	"valueDecimal": "1.0",
+	"value": "1.0",
+	"valueUnits": "1000000000000000000",
 	"blockchain": "ETHEREUM",
-	"fromAddress": "0x67b1d87101671b127f5f8714789c7192f7ad340e",
+	"fromAddresses": ["0x67b1d87101671b127f5f8714789c7192f7ad340e"],
 	"block": 171,
 	"txHash": "0x0b15d671d9fe9cfe110c2d3a03867cc0525f6aeee45fe21ff66d07e0fd38ef46",
 	"confirmations": 10,
@@ -227,10 +228,10 @@ human-readable description of status field
 		"uniqueId": "unique id you specified when address was created",
 		"meta": "meta you specified when address was created"
 	},
-	"value": "1000000000000000000",
-	"valueDecimal": "1.0",
+	"value": "1.0",
+	"valueUnits": "1000000000000000000",
 	"blockchain": "ETHEREUM",
-	"fromAddress": "0x67b1d87101671b127f5f8714789c7192f7ad340e",
+	"fromAddresses": ["0x67b1d87101671b127f5f8714789c7192f7ad340e"],
 	"block": 171,
 	"txHash": "0x0b15d671d9fe9cfe110c2d3a03867cc0525f6aeee45fe21ff66d07e0fd38ef46",
 	"confirmations": 21,

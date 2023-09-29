@@ -41,7 +41,7 @@ You can set your server URL on the <a href="https://app.curra.io/notifications" 
 <tr>
 <td>id</td>
 <td><i>string*</i></td>
-<td>identifier of a payment</td>
+<td>unique identifier</td>
 </tr>
 <tr>
 <td>toAddress</td>
@@ -60,7 +60,7 @@ meta – meta provided on address creation
 <tr>
 <td>id</td>
 <td><i>string*</i></td>
-<td>identifier of a payment</td>
+<td>unique identifier</td>
 </tr>
 
 <tr>
@@ -74,7 +74,7 @@ sender address
 </tr>
 
 <tr>
-<td>value</td>
+<td>valueUnits</td>
 <td>
 string*
 </td>
@@ -84,12 +84,12 @@ payment amount in units
 </tr>
 
 <tr>
-<td>valueDecimal</td>
+<td>value</td>
 <td>
 string*
 </td>
 <td>
-payments amount in decimal format
+payment amount in decimal format
 </td>
 </tr>
 
@@ -196,8 +196,8 @@ human-readable description of status field
 		"uniqueId": "unique id you specified when address was created or default one",
 		"meta": "meta you specified when address was created"
 	},
-	"value": "1000000000000000000",
-	"valueDecimal": "1.0",
+	"value": "1.0",
+	"valueUnits": "1000000000000000000",
 	"blockchain": "ETHEREUM",
 	"fromAddress": "0x67b1d87101671b127f5f8714789c7192f7ad340e",
 	"block": 171,

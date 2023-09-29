@@ -17,31 +17,21 @@ You can get withdrawal using SDK or API endpoint
 <tr>
 <td>id</td>
 <td><i>string*</i></td>
-<td>identifier of a payment</td>
+<td>unique identifier</td>
 </tr>
-
 <tr>
+
 <td>toAddress</td>
 <td>
 string*
 </td>
 <td>
-payment receipient address
+recipient address
 </td>
 </tr>
 
 <tr>
-<td>to</td>
-<td>
-string*
-</td>
-<td>
-payment recipient address
-</td>
-</tr>
-
-<tr>
-<td>value</td>
+<td>valueUnits</td>
 <td>
 string*
 </td>
@@ -51,12 +41,12 @@ payment amount in units
 </tr>
 
 <tr>
-<td>valueDecimal</td>
+<td>value</td>
 <td>
 string*
 </td>
 <td>
-payments amount in decimal format
+payment amount in decimal format
 </td>
 </tr>
 
@@ -67,6 +57,16 @@ string*
 </td>
 <td>
 available values at "API value" column <a href="/introduction/availability.html">here<a/>
+</td>
+</tr>
+
+<tr>
+<td>block</td>
+<td>
+number
+</td>
+<td>
+block number in which payment was mined
 </td>
 </tr>
 
